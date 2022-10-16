@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "angular-test-example-with-reactive-forms": {
+    "angular-reactive-forms-static-example-incl-edit-delete": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-test-example-with-reactive-forms",
+            "outputPath": "dist/angular-reactive-forms-static-example-incl-edit-delete",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-test-example-with-reactive-forms:build"
+            "browserTarget": "angular-reactive-forms-static-example-incl-edit-delete:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-test-example-with-reactive-forms:build:production"
+              "browserTarget": "angular-reactive-forms-static-example-incl-edit-delete:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-test-example-with-reactive-forms:build"
+            "browserTarget": "angular-reactive-forms-static-example-incl-edit-delete:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-test-example-with-reactive-forms:serve"
+            "devServerTarget": "angular-reactive-forms-static-example-incl-edit-delete:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-test-example-with-reactive-forms:serve:production"
+              "devServerTarget": "angular-reactive-forms-static-example-incl-edit-delete:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-test-example-with-reactive-forms"
+  "defaultProject": "angular-reactive-forms-static-example-incl-edit-delete"
 }

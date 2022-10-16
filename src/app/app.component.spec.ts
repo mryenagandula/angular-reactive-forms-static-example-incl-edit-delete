@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-test-example-with-reactive-forms'`, () => {
+  it(`should have as title 'angular-reactive-forms-static-example-incl-edit-delete'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-test-example-with-reactive-forms');
+    expect(app.title).toEqual('angular-reactive-forms-static-example-incl-edit-delete');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-test-example-with-reactive-forms app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-reactive-forms-static-example-incl-edit-delete app is running!');
   });
 });

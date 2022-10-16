@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-test-example-with-reactive-forms app is running!');
+    expect(page.getTitleText()).toEqual('angular-reactive-forms-static-example-incl-edit-delete app is running!');
   });
 
   afterEach(async () => {
